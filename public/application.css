@@ -1,0 +1,10 @@
+p {
+	color: turquoise;
+	font-family: sans-serif;
+}
+
+div.submitted {
+	background-color: whitesmoke;
+	text-align: center;
+}
+

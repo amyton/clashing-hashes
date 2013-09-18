@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="application.css" type="text/css" />
+</head>
+
+<body>
+	<h1>Hey <%= @title %>!</h1>
+
+	<% if @show_description %>
+		<p>Let's talk about sparkly things!</p>
+	<% end %>
+
+	<div id="form-box">
+		<form action="http://localhost:4567/twitter" method="POST">
+			<label>HashTag #1: </label>
+			<input type="text" name="first_hash"/>
+			<br />
+			<label>HashTag #2: <label>
+			<input type="text" name="second_hash"/>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
